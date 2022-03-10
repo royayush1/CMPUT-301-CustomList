@@ -68,6 +68,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void deleteCity(City city){
-        return;
+        for(City place:cities){
+            if (place.getCityName() == city.getCityName()){
+                cities.remove(place);
+            }
+
+        }
     }
 }
