@@ -78,6 +78,10 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public int countCities(){
-        return -1;
+        int count = 0;
+        for(City place:cities){
+            count = count + 1;
+        }
+        return count;
     }
 }
