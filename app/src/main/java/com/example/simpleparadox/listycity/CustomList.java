@@ -71,6 +71,7 @@ public class CustomList extends ArrayAdapter<City> {
         for(City place:cities){
             if (place.getCityName() == city.getCityName()){
                 cities.remove(place);
+                return;
             }
 
         }
